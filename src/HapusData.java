@@ -9,7 +9,7 @@ public class HapusData {
 
         String SQLITE = "DELETE FROM siswa WHERE id_siswa = ?";
         PreparedStatement stmt = koneksi.myKoneksi().prepareStatement(SQLITE);
-        stmt.setInt(1, 4);
+        stmt.setInt(1, 2);
         stmt.execute();
 
         System.out.println("Siswa tolol berhasil dibuang!");

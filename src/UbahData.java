@@ -7,11 +7,11 @@ public class UbahData {
         
         Koneksi koneksi = new Koneksi();
 
-        String SQLITE = "UPDATE siswa SET nama_siswa = ? WHERE id_siswa = ?";
+        String SQLITE = "UPDATE siswa SET jenis_kelamin = ? WHERE id_siswa = ?";
 
         PreparedStatement stmt = koneksi.myKoneksi().prepareStatement(SQLITE);
-        stmt.setString(1, "Natasha Belle");
-        stmt.setInt(2, 6);
+        stmt.setString(1, "Gak Puguh");
+        stmt.setInt(2, 5);
         stmt.execute();
 
         System.out.println("Data Berhasil diperaharui!");
